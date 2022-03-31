@@ -7,32 +7,32 @@ public class Calculadora {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
-		int a, b;
+		double a, b;
 		System.out.println("Digite o primeiro valor: ");
 		a = scan.nextInt();
 		System.out.println("Digite o primeiro valor: ");
 		b = scan.nextInt();
 		
-		int soma = soma (a,b);
-		int subtracao = subtracao (a,b);
+		double soma = soma (a,b);
+		double subtracao = subtracao (a,b);
     	double divisao = divisao (a,b);
-		int multiplicacao = multiplicacao (a,b);
+		double multiplicacao = multiplicacao (a,b);
 		System.out.println("Soma: "+ soma + " Subtração: "+subtracao+" Divisão: "+ divisao + " Multiplicação: "+ multiplicacao);		
 	}
 
-public static int soma(int a, int b) {
+public static double soma(double a, double b) {
 	return a+b;
 }
 
-public static int subtracao(int a, int b) {
+public static double subtracao(double a, double b) {
 	return a-b;
 }
 
-public static double divisao(int a, int b) {
+public static double divisao(double a, double b) {
 	return a/b;
 }
 
-public static int multiplicacao(int a, int b) {
+public static double multiplicacao(Double a, double b) {
 	return a*b;
 }
 
